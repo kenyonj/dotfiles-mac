@@ -74,6 +74,7 @@ cask "qbserve"
 cask "quitter"
 cask "sizeup"
 cask "sketch"
+cask "spectacle"
 cask "spotify"
 cask "subler"
 cask "transmission"
@@ -83,14 +84,10 @@ cask "vmware-fusion"
 cask "whatsapp"
 cask "zoomus"
 mas "GarageBand", id: 682658836
-mas "iA Writer", id: 775737590
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
-mas "Mactracker", id: 430255202
 mas "Numbers", id: 409203825
-mas "OneDrive", id: 823766827
 mas "Pages", id: 409201541
-mas "Reeder", id: 880001334
 mas "Slack", id: 803453959
 mas "Spark", id: 1176895641
 mas "Tweetbot", id: 1384080005
