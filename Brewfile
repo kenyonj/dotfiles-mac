@@ -44,6 +44,7 @@ brew "memcached", restart_service: true
 brew "mysql@5.7", restart_service: true
 brew "nginx", restart_service: true
 brew "pkg-config"
+brew "neovim"
 brew "node-build"
 brew "nodenv"
 brew "postgresql", restart_service: true
@@ -56,7 +57,9 @@ brew "shellcheck"
 brew "ssh-copy-id"
 brew "wget"
 brew "write-good"
+cask "alfred"
 cask "appcleaner"
+cask "bartender"
 cask "doxie"
 cask "dropbox"
 cask "firefox"
@@ -64,13 +67,14 @@ cask "fork"
 cask "google-chrome"
 cask "java8"
 cask "keepingyouawake"
+cask "kitty"
 cask "licecap"
 cask "muzzle"
 cask "qbserve"
 cask "quitter"
 cask "sizeup"
 cask "sketch"
-cask "steam"
+cask "spotify"
 cask "subler"
 cask "transmission"
 cask "vagrant"
@@ -78,8 +82,6 @@ cask "visual-studio-code"
 cask "vmware-fusion"
 cask "whatsapp"
 cask "zoomus"
-mas "1Password 7", id: 1333542190
-mas "Fantastical 2", id: 975937182
 mas "GarageBand", id: 682658836
 mas "iA Writer", id: 775737590
 mas "iMovie", id: 408981434
@@ -90,5 +92,6 @@ mas "OneDrive", id: 823766827
 mas "Pages", id: 409201541
 mas "Reeder", id: 880001334
 mas "Slack", id: 803453959
+mas "Spark", id: 1176895641
 mas "Tweetbot", id: 1384080005
 mas "Xcode", id: 497799835
