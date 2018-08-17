@@ -90,5 +90,4 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Slack", id: 803453959
 mas "Spark", id: 1176895641
-mas "Tweetbot", id: 1384080005
 mas "Xcode", id: 497799835
