@@ -35,6 +35,7 @@ brew "jemalloc"
 brew "oniguruma"
 brew "jq"
 brew "jsonlint"
+brew "lastpass-cli --with-pinentry --with-doc"
 brew "launch_socket_server", restart_service: true
 brew "launchdns", restart_service: true
 brew "libyaml"
