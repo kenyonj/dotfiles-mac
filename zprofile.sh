@@ -60,3 +60,5 @@ export RPROMPT='%{$fg_bold[red]%}$(git_branch)%{$fg_bold[yellow]%}$(svn_branch)%
 
 # more macOS/Bash-like word jumps
 export WORDCHARS=""
+
+eval "$(fasd --init auto)"

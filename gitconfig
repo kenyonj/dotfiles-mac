@@ -201,3 +201,11 @@
 	# Show the diff as a comment in the commit message template.
 	verbose = true
 	gpgsign = true
+[user]
+	name = Justin Kenyon
+	email = kenyonj@github.com
+        signingkey = 2538E93E
+[github]
+	user = kenyonj
+[gpg]
+	program = gpg

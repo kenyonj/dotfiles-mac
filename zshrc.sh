@@ -22,8 +22,7 @@ setopt share_history
 # Don't hang up background jobs
 setopt no_hup
 
-# use emacs bindings even with vim as EDITOR
-bindkey -e
+bindkey jj vi-cmd-mode
 
 # fix backspace on Debian
 [ -n "$LINUX" ] && bindkey "^?" backward-delete-char

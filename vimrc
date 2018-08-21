@@ -13,6 +13,9 @@ set smartcase
 set hlsearch
 set incsearch
 
+" set the shell for opening `:terminal`s
+set shell=/bin/zsh
+
 " indentation
 set autoindent
 set smarttab

@@ -87,6 +87,8 @@ alias gist="gist --open --copy"
 alias svn="svn-git.sh"
 alias sha256="shasum -a 256"
 
+source "$HOME/.zsh/aliases.zsh"
+
 # Platform-specific stuff
 if quiet_which brew
 then
