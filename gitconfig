@@ -136,20 +136,12 @@
 	# HTTP server.
 	httpd = webrick
 [diff]
-	# Use the macOS graphical three-way merge tool for graphical diffs.
-	tool = opendiff
 	# Use the slower but better patience diff algorithm
 	algorithm = patience
 	# Use new diff algorithm to make e.g. function diffs look better.
 	compactionheuristic = true
 [diff "xml"]
 	textconv = xmllint --format --recover
-[difftool "opendiff"]
-	# Set the macOS opendiff command name.
-	path = opendiff
-[merge]
-	# Use the macOS graphical three-way merge tool for graphical merges.
-	tool = opendiff
 [mergetool]
 	# Don't prompt before opening the merge tool.
 	prompt = false
@@ -203,7 +195,7 @@
 	gpgsign = true
 [user]
 	name = Justin Kenyon
-	email = kenyonj@github.com
+	email = kenyonj@gmail.com
         signingkey = 2538E93E
 [github]
 	user = kenyonj
