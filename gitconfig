@@ -3,6 +3,8 @@
 [color]
 	# Colour terminal command output when possible.
 	ui = auto
+[pretty]
+  colored = format:%C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an, %cr]%Creset
 [gist]
 	# Open GitHub Gist in browser after submission.
 	browse = true

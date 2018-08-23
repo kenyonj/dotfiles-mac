@@ -22,6 +22,10 @@ setopt share_history
 # Don't hang up background jobs
 setopt no_hup
 
+# use emacs bindings even with vim as EDITOR
+bindkey -e
+
+# use a quick `jj` keystroke to get into vim mode on the command line
 bindkey jj vi-cmd-mode
 
 # fix backspace on Debian

@@ -65,6 +65,8 @@ add_to_path_start "/usr/local/bin"
 add_to_path_start "/usr/local/sbin"
 add_to_path_start "$HOME/Homebrew/bin"
 add_to_path_start "$HOME/Homebrew/sbin"
+add_to_path_start "/usr/bin"
+add_to_path_start "/bin"
 
 # Run rbenv if it exists
 quiet_which rbenv && add_to_path_start "$(rbenv root)/shims"
@@ -182,23 +184,7 @@ then
 fi
 
 # Set up editor
-if [ -n "${SSH_CONNECTION}" ] && quiet_which rmate
-then
-  export EDITOR="rmate"
-  export GIT_EDITOR="$EDITOR -w"
-  export SVN_EDITOR=$GIT_EDITOR
-elif quiet_which code
-then
-  export EDITOR="code"
-  export GIT_EDITOR="$EDITOR -w"
-  export SVN_EDITOR="$GIT_EDITOR"
-elif quiet_which vim
-then
-  export EDITOR="vim"
-elif quiet_which vi
-then
-  export EDITOR="vi"
-fi
+export EDITOR="vim"
 
 # Run dircolors if it exists
 quiet_which dircolors && eval "$(dircolors -b)"
