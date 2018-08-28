@@ -49,14 +49,13 @@ svn_branch() {
 
 if [ "$USER" = "root" ]
 then
-  export PROMPT='%{$fg_bold[magenta]%}%m %{$fg_bold[blue]%}# %b%f'
+  export PROMPT='%{$fg_bold[magenta]%}%m [%{$fg_bold[blue]%}%~%b%f] %{$fg_bold[blue]%}# %b%f'
 elif [ -n "${SSH_CONNECTION}" ]
 then
-  export PROMPT='%{$fg_bold[cyan]%}%m %{$fg_bold[blue]%}# %b%f'
+  export PROMPT='%{$fg_bold[cyan]%}%m [%{$fg_bold[blue]%}%~%b%f] %{$fg_bold[blue]%}# %b%f'
 else
-  export PROMPT='%{$fg_bold[green]%}%m %{$fg_bold[blue]%}# %b%f'
+  export PROMPT='%{$fg_bold[green]%}%m [%{$fg_bold[blue]%}%~%b%f] %{$fg_bold[blue]%}# %b%f'
 fi
-export RPROMPT='%{$fg_bold[red]%}$(git_branch)%{$fg_bold[yellow]%}$(svn_branch)%b[%{$fg_bold[blue]%}%~%b%f]'
 
 # more macOS/Bash-like word jumps
 export WORDCHARS=""
