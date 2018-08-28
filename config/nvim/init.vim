@@ -66,6 +66,3 @@ source $HOME/.config/nvim/colors.vim
 source $HOME/.config/nvim/plugins.vim
 source $HOME/.config/nvim/shortcuts.vim
 source $HOME/.config/nvim/autocommands.vim
-
-" set env var for `:terminal`s to open properly
-let $LOGIN_ZSH = 1

@@ -33,7 +33,7 @@ let g:netrw_retmap = 1
 let g:netrw_dirhistmax = 0
 
 " vim-rspec - Use Tbro to run rspec
-let g:rspec_command = "Tbro bundle exec rspec {spec}"
+let g:rspec_command = "Tbro bin/tt {spec}"
 
 " Set airline theme
 " let g:airline_solarized_bg='dark'

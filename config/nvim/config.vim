@@ -22,7 +22,7 @@ set number                      " Show regular numbers
 set noshowcmd                   " Don't show command in the last line of the screen
 set noswapfile                  " No swap
 set nowrap                      " Don't wrap lines
-set relativenumber              " Show relative line numbers
+" set relativenumber              " Show relative line numbers
 set ruler                       " Show the ruler
 set scrolloff=5                 " Always show 5 lines above/blow cursor
 set completeopt+=menuone        " Always show menu
@@ -70,3 +70,5 @@ if exists("+undofile")
   set undofile
   set undodir=~/.vim/undo/
 endif
+
+let test#ruby#rails#executable = 'bin/tt'

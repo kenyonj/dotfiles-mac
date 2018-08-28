@@ -10,3 +10,4 @@ bundle/cache
 secrets
 rbenv/*/
 config/nvim/bundle/vim-tbro
+config/configstore

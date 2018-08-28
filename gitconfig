@@ -1,205 +1,167 @@
 [include]
-	path = ~/.gitconfig-user
+  path = ~/.gitconfig-user
 [color]
-	# Colour terminal command output when possible.
-	ui = auto
+  ui = auto
 [pretty]
   colored = format:%C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an, %cr]%Creset
 [gist]
-	# Open GitHub Gist in browser after submission.
-	browse = true
+  browse = true
 [push]
-	# Push to the set upstream branch being tracked by default.
-	default = simple
+  default = simple
 [pull]
-	# Default to rebasing on pulls
-	rebase = true
+  rebase = true
 [fetch]
-	# Always prune when fetching (and pulling).
-	prune = 1
+  prune = 1
 [rerere]
-	# Store and re-use manual conflict resolution changes.
-	enabled = 1
+  enabled = 1
 [core]
-	# Exclude everything this file. Used for general exclusions.
-	excludesfile = ~/.gitignore
-	# Set attributes on files. Used for general diff improvements.
-	attributesfile = ~/.gitattributes
-	# Don't prompt for commit messages for merge commits.
-	mergeoptions = --no-edit
-	commitGraph = true
+  excludesfile = ~/.gitignore
+  attributesfile = ~/.gitattributes
+  mergeoptions = --no-edit
+  commitGraph = true
 [help]
-  # Autocorrect mistyped commands.
-	autocorrect = 1
+  autocorrect = 1
 [alias]
-	## 'New' Commands
-	# Unstage the changes in a given file.
-	unstage = reset HEAD --
-	# View the current changes in the staging area.
-	staged = diff --cached
-	# Print the name of the current branch.
-	current-branch = symbolic-ref --short HEAD
-	# Print the name of the current upstream tracking branch.
-	upstream = !git config --get branch.$(git current-branch).remote \
-	         || echo origin
-	# Cherry-pick a commit with your signature.
-	sign = cherry-pick --signoff
-	# List all current SVN externals for this repository.
-	svn-externals = !git svn show-externals | grep -x \\"[^#].*\\"
-	# Create a git:// server of the current repository.
-	# WARNING: this gives all users read/write access
-	# without authentication (so only use on trusted networks).
-	serve = !git daemon --reuseaddr --export-all --base-path=. \
-	                    --verbose ./.git
-	# Merge a branch and commit a merge commit (even if one
-	# isn't needed)
-	noff = merge --no-ff
-	# Merge a branch with a merge commit and resolve any conflicts
-	# always using that branch's version rather than the current branch.
-	theirs = !git noff -Xtheirs
-	# Fetch all branches and rebase the current branch against
-	# upstream/master.
-	rebase-against-master = !git fetch --all \
-	                      && git rebase $(git upstream)/master
-	# Push the current branch upstream to origin using the same branch
-	# name for the remote branch.
-	upstream-current-branch = !git push --set-upstream origin \
-	                         $(git current-branch)
-	# Create a pull request on GitHub using the `hub` command.
-	pull-request = !rm -f .git/PULLREQ_EDITMSG && hub pull-request -o
-	# Upstream the current branch to origin and create a pull request
-	# on GitHub.
-	upstream-and-pull-request = !git upstream-current-branch \
-	                          && git pull-request
-	# Get the current diff but show differences between characters
-	# instead of just the differences between lines.
-	word-diff = diff --word-diff
-	# Push the current branch and set it as the default upstream branch.
-	push-and-set-upstream = push --set-upstream
-	# Create a new branch by checking out another branch.
-	checkout-as-new-branch = checkout -b
-	# Rebase against origin/master and prompt for what operations
-	# should be performed.
-	interactively-rebase-against-origin-master = \
-	  !git rebase --interactive origin/master
-	# Show the commit log with a prettier, clearer history.
-	pretty-one-line-log = log --graph --oneline --decorate
-	# Commit any changes to files, squash them into the last commit
-	# and update its date.
-	fix-up-previous-commit = !git commit --all --amend \
-	                              --reuse-message=HEAD --date=\"$(date)\" #"
-	# Checkout the master branch and update it.
-	pull-master = !git checkout master && git pull
-	# Commit a work-in-progress commit (to use with
-	# fix-up-previous-commit)
-	work-in-progress = commit -a -m 'WIP'
-	# Merge a branch with a merge commit and use the more time-consuming
-	# patience diff algorithm
-	patience = !git noff -Xpatience
-	# Hard reset branch to the upstream version.
-	hard-reset = !git reset --hard $(git upstream)/$(git current-branch)
-	# Assume the specified file is unchanged to stop changes
-	# being seen by Git
-	assume = update-index --assume-unchanged
-	# No longer assume a specified file remains unchanged
-	unassume = update-index --no-assume-unchanged
-	# List all files that are assumed to be unchanged
-	assumed = !git ls-files -v | grep '^[hsmrck?]' | cut -c 3-
-	# Delete all non-master branches
-	delete-merged = !git branch --merged | grep -v 'master' | grep -v '*' | xargs -n 1 git branch -D
-	# Get the merge-base compared to origin/master
-	merge-base-master = merge-base origin/master HEAD
-	# Diff against the current branch's merge-base
-	diff-merge-base = !git diff $(git merge-base-master)
+  ## 'New' Commands
+  # Unstage the changes in a given file.
+  unstage = reset HEAD --
+  # View the current changes in the staging area.
+  staged = diff --cached
+  # Print the name of the current branch.
+  current-branch = symbolic-ref --short HEAD
+  # Print the name of the current upstream tracking branch.
+  upstream = !git config --get branch.$(git current-branch).remote \
+           || echo origin
+  # Cherry-pick a commit with your signature.
+  sign = cherry-pick --signoff
+  # List all current SVN externals for this repository.
+  svn-externals = !git svn show-externals | grep -x \\"[^#].*\\"
+  # Create a git:// server of the current repository.
+  # WARNING: this gives all users read/write access
+  # without authentication (so only use on trusted networks).
+  serve = !git daemon --reuseaddr --export-all --base-path=. \
+                      --verbose ./.git
+  # Merge a branch and commit a merge commit (even if one
+  # isn't needed)
+  noff = merge --no-ff
+  # Merge a branch with a merge commit and resolve any conflicts
+  # always using that branch's version rather than the current branch.
+  theirs = !git noff -Xtheirs
+  # Fetch all branches and rebase the current branch against
+  # upstream/master.
+  rebase-against-master = !git fetch --all \
+                        && git rebase $(git upstream)/master
+  # Push the current branch upstream to origin using the same branch
+  # name for the remote branch.
+  upstream-current-branch = !git push --set-upstream origin \
+                           $(git current-branch)
+  # Create a pull request on GitHub using the `hub` command.
+  pull-request = !rm -f .git/PULLREQ_EDITMSG && hub pull-request -o
+  # Upstream the current branch to origin and create a pull request
+  # on GitHub.
+  upstream-and-pull-request = !git upstream-current-branch \
+                            && git pull-request
+  # Get the current diff but show differences between characters
+  # instead of just the differences between lines.
+  word-diff = diff --word-diff
+  # Push the current branch and set it as the default upstream branch.
+  push-and-set-upstream = push --set-upstream
+  # Create a new branch by checking out another branch.
+  checkout-as-new-branch = checkout -b
+  # Rebase against origin/master and prompt for what operations
+  # should be performed.
+  interactively-rebase-against-origin-master = \
+    !git rebase --interactive origin/master
+  # Show the commit log with a prettier, clearer history.
+  pretty-one-line-log = log --graph --oneline --decorate
+  # Commit any changes to files, squash them into the last commit
+  # and update its date.
+  fix-up-previous-commit = !git commit --all --amend \
+                                --reuse-message=HEAD --date=\"$(date)\" #"
+  # Checkout the master branch and update it.
+  pull-master = !git checkout master && git pull
+  # Commit a work-in-progress commit (to use with
+  # fix-up-previous-commit)
+  work-in-progress = commit -a -m 'WIP'
+  # Merge a branch with a merge commit and use the more time-consuming
+  # patience diff algorithm
+  patience = !git noff -Xpatience
+  # Hard reset branch to the upstream version.
+  hard-reset = !git reset --hard $(git upstream)/$(git current-branch)
+  # Assume the specified file is unchanged to stop changes
+  # being seen by Git
+  assume = update-index --assume-unchanged
+  # No longer assume a specified file remains unchanged
+  unassume = update-index --no-assume-unchanged
+  # List all files that are assumed to be unchanged
+  assumed = !git ls-files -v | grep '^[hsmrck?]' | cut -c 3-
+  # Delete all non-master branches
+  delete-merged = !git branch --merged | grep -v 'master' | grep -v '*' | xargs -n 1 git branch -D
+  # Get the merge-base compared to origin/master
+  merge-base-master = merge-base origin/master HEAD
+  # Diff against the current branch's merge-base
+  diff-merge-base = !git diff $(git merge-base-master)
 
-	## Shortened 'New' Commands
-	fahr = !git fetch --all && git hard-reset
-	rem = !git rebase-against-master
-	wip = !git work-in-progress
-	pr = !git upstream-and-pull-request
-	up = !git upstream-current-branch
-	fa = !git fetch --all
-	pf = !git push --force-with-lease
-	dm = !git diff-merge-base
-	mb = !git merge-base-master
-	w = !git word-diff
-	u = !git push-and-set-upstream
-	b = !git checkout-as-new-branch
-	i = !git interactively-rebase-against-origin-master
-	# `true` needed as the return status is wrong otherwise.
-	l = !git pretty-one-line-log || true
-	f = !git fix-up-previous-commit
+  ## Shortened 'New' Commands
+  fahr = !git fetch --all && git hard-reset
+  rem = !git rebase-against-master
+  wip = !git work-in-progress
+  pr = !git upstream-and-pull-request
+  up = !git upstream-current-branch
+  fa = !git fetch --all
+  pf = !git push --force-with-lease
+  dm = !git diff-merge-base
+  mb = !git merge-base-master
+  w = !git word-diff
+  u = !git push-and-set-upstream
+  b = !git checkout-as-new-branch
+  i = !git interactively-rebase-against-origin-master
+  # `true` needed as the return status is wrong otherwise.
+  l = !git pretty-one-line-log || true
+  f = !git fix-up-previous-commit
 
-	## Shortened Existing Commands
-	p = pull
-	s = status --short --branch
+  ## Shortened Existing Commands
+  p = pull
+  s = status --short --branch
 [instaweb]
-	# Use the Ruby WEBRick library when creating a `git instaweb`
-	# HTTP server.
-	httpd = webrick
+  httpd = webrick
 [diff]
-	# Use the slower but better patience diff algorithm
-	algorithm = patience
-	# Use new diff algorithm to make e.g. function diffs look better.
-	compactionheuristic = true
+  algorithm = patience
+  compactionheuristic = true
 [diff "xml"]
-	textconv = xmllint --format --recover
+  textconv = xmllint --format --recover
 [mergetool]
-	# Don't prompt before opening the merge tool.
-	prompt = false
-	# Don't keep backups of the merge tool inputs.
-	keepBackup = false
-	# Don't keep the merge tool temporary input/output files.
-	keepTemporaries = false
+  prompt = false
+  keepBackup = false
+  keepTemporaries = false
 [mergetool "opendiff"]
-	# Use a script to setup opendiff correctly for Git merges.
-	path = git-mergetool-opendiff
+  path = git-mergetool-opendiff
 [apply]
-	# Cleanup whitespace by default when apply patches.
-	whitespace = fix
+  whitespace = fix
 [rebase]
-	# Run `git stash` if needed before a `git rebase`
-	autoStash = true
-	# Auto-add `--autosquash` to `git rebase`
-	autoSquash = true
+  autoStash = true
+  autoSquash = true
 [url "git@github.com:"]
-	# Always use GitHub SSH protocol to push.
-	# Allows use of git:// for public repositories with push access
-	pushInsteadOf = git://github.com/
-[url "https://github.com/"]
-	# Use HTTP for GitHub instead of git:// or git@
-	# Enable this in networks where git:// or git@ are blocked.
-	#insteadOf = git://github.com/
-	#insteadOf = git@github.com:
-[url "git@github.com:"]
-	# Use SSH for GitHub instead of https://
-	# Enable this in networks where https:// has issues.
-	#insteadOf = https://github.com/
+  pushInsteadOf = git://github.com/
 [url "git@gitorious.org:"]
-	# Always use Gitorious SSH protocol to push.
-	# Allows use of git:// for public repositories with push access
-	# (which is often faster).
-	pushInsteadOf = git://gitorious.org/
+  pushInsteadOf = git://gitorious.org/
 [credential]
-	# Use macOS Keychain to store HTTP passwords.
-	helper = osxkeychain
+  helper = osxkeychain
 [hub]
-	protocol = https
-# Settings for Git LFS
+  protocol = https
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	required = true
-	process = git-lfs filter-process
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  required = true
+  process = git-lfs filter-process
 [commit]
-	# Show the diff as a comment in the commit message template.
-	verbose = true
-	gpgsign = true
+  verbose = true
+  gpgsign = true
 [user]
-	name = Justin Kenyon
-	email = kenyonj@gmail.com
-        signingkey = 2538E93E
+  name = Justin Kenyon
+  email = kenyonj@gmail.com
+  signingkey = 2538E93E
 [github]
-	user = kenyonj
+  user = kenyonj
 [gpg]
-	program = gpg
+  program = gpg
