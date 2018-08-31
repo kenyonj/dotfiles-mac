@@ -56,6 +56,7 @@ then
 else
   export PROMPT='%{$fg_bold[green]%}%m [%{$fg_bold[blue]%}%~%b%f] %{$fg_bold[blue]%}# %b%f'
 fi
+export RPROMPT=''
 
 # more macOS/Bash-like word jumps
 export WORDCHARS=""
