@@ -151,5 +151,10 @@
 	# 1. Go to Yahoo weather http://weather.yahoo.com/
 	# 2. Find the weather for you location
 	# 3. Copy the last numbers in that URL. e.g. "http://weather.yahoo.com/united-states/california/newport-beach-12796587/" has the numbers "12796587"
-	TMUX_POWERLINE_SEG_WEATHER_LOCATION="2516904"
+    #
+    # West Dennis, MA
+	# TMUX_POWERLINE_SEG_WEATHER_LOCATION="2516904"
+    #
+    # Belmont, MA
+	TMUX_POWERLINE_SEG_WEATHER_LOCATION="12758863"
 # }
