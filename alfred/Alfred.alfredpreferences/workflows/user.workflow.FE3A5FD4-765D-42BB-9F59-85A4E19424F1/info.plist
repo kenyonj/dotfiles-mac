@@ -32,6 +32,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>D1C18773-241E-46DD-959E-5140E67CA51C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F693926C-ACEC-4E1B-BF1A-08DBABE097C7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>D22EC9E3-E06F-466B-B6A9-F79AD4F32044</key>
 		<array>
 			<dict>
@@ -140,7 +153,7 @@
 			<key>config</key>
 			<dict>
 				<key>argumenttype</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>keyword</key>
 				<string>zmp</string>
 				<key>subtext</key>
@@ -148,7 +161,7 @@
 				<key>text</key>
 				<string>copies your personal url to the clipboard</string>
 				<key>withspace</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.keyword</string>
@@ -163,7 +176,7 @@
 				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
-				<string>https://github.zoom.us/j/3441648403</string>
+				<string>https://github.zoom.us/my/kenyonj</string>
 				<key>transient</key>
 				<false/>
 			</dict>
@@ -174,6 +187,27 @@
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Your personal zoom link has been copied to the keyboard.</string>
+				<key>title</key>
+				<string>Link Copied!</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>F693926C-ACEC-4E1B-BF1A-08DBABE097C7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -182,44 +216,51 @@
 		<key>4C3CE9EC-5C26-422C-8D3A-1897D275B343</key>
 		<dict>
 			<key>xpos</key>
-			<integer>310</integer>
+			<integer>160</integer>
 			<key>ypos</key>
-			<integer>220</integer>
+			<integer>120</integer>
 		</dict>
 		<key>5BEFE8D6-17C0-43D4-ABFC-8E453E7FE722</key>
 		<dict>
 			<key>xpos</key>
-			<integer>70</integer>
+			<integer>10</integer>
 			<key>ypos</key>
-			<integer>200</integer>
+			<integer>120</integer>
 		</dict>
 		<key>A7877633-DCEB-4327-8324-5CAE16D923EC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>70</integer>
+			<integer>10</integer>
 			<key>ypos</key>
-			<integer>390</integer>
+			<integer>230</integer>
 		</dict>
 		<key>C9246728-BFD8-471B-A078-737A94139D4D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>290</integer>
+			<integer>160</integer>
 			<key>ypos</key>
-			<integer>20</integer>
+			<integer>10</integer>
 		</dict>
 		<key>D1C18773-241E-46DD-959E-5140E67CA51C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>310</integer>
+			<integer>160</integer>
 			<key>ypos</key>
-			<integer>400</integer>
+			<integer>230</integer>
 		</dict>
 		<key>D22EC9E3-E06F-466B-B6A9-F79AD4F32044</key>
 		<dict>
 			<key>xpos</key>
-			<integer>80</integer>
+			<integer>10</integer>
 			<key>ypos</key>
-			<integer>40</integer>
+			<integer>10</integer>
+		</dict>
+		<key>F693926C-ACEC-4E1B-BF1A-08DBABE097C7</key>
+		<dict>
+			<key>xpos</key>
+			<integer>310</integer>
+			<key>ypos</key>
+			<integer>230</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
