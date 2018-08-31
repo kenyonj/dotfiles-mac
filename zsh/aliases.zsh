@@ -70,3 +70,6 @@ alias gri="git rebase -i"
 alias gs="git status -s"
 alias standup="git standup"
 alias 💸="~/.bin/git-money"
+
+# tmux
+alias tmux="tmux new-session -A -s main"
