@@ -7,22 +7,19 @@ STAGED_BRANCH_COLOR="#[fg=colour16, bg=colour3]"
 branch_color() {
   local git_status=$(cd $1; git status -unormal 2>&1)
 
-  if [[ "$git_status" =~ nothing\ to\ commit ]]
-  then
-    echo $CLEAN_BRANCH_COLOR
-  elif [[ "$git_status" =~ nothing\ added\ to\ commit\ but\ untracked\ files\ present ]]; then
-    echo $DIRTY_BRANCH_COLOR
+  if [[ "$git_status" =~ Changes\ not\ staged ]]; then
+    echo -n $DIRTY_BRANCH_COLOR
   elif [[ "$git_status" =~ Your\ branch\ is\ ahead\ of ]]; then
-    echo $STAGED_BRANCH_COLOR
-  else
-    echo $DIRTY_BRANCH_COLOR
+    echo -n $STAGED_BRANCH_COLOR
+  elif [[ "$git_status" =~ nothing\ to\ commit ]]; then
+    echo -n $CLEAN_BRANCH_COLOR
   fi
 }
 
 if [[ -d "$1/.git" ]]
 then
   branch_name=$(cd $1; git rev-parse --abbrev-ref HEAD)
-  echo -n "$(branch_color) $branch_name "
+  echo -n "$(branch_color $1) $branch_name "
 else 
   echo ""
 fi
