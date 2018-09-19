@@ -11,6 +11,8 @@ branch_color() {
   then
     echo $CLEAN_BRANCH_COLOR
   elif [[ "$git_status" =~ nothing\ added\ to\ commit\ but\ untracked\ files\ present ]]; then
+    echo $DIRTY_BRANCH_COLOR
+  elif [[ "$git_status" =~ Your\ branch\ is\ ahead\ of ]]; then
     echo $STAGED_BRANCH_COLOR
   else
     echo $DIRTY_BRANCH_COLOR
