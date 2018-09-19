@@ -11,3 +11,4 @@ secrets
 rbenv/*/
 config/nvim/bundle/vim-tbro
 config/configstore
+alfred/Alfred.alfredpreferences/
