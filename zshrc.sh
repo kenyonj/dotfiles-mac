@@ -37,3 +37,4 @@ bindkey jj vi-cmd-mode
 # alternate mappings for Ctrl-U/V to search the history
 bindkey "^u" history-beginning-search-backward
 bindkey "^v" history-beginning-search-forward
+export PATH="/usr/local/bin:$PATH"

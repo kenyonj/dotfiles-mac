@@ -19,7 +19,7 @@ git_status_color() {
 if [[ -d "$1/.git" ]]
 then
   branch_name=$(cd $1; git rev-parse --abbrev-ref HEAD)
-  echo -n "$(git_status_color $1) $branch_name "
+  echo -n "$branch_name "
 else 
   echo ""
 fi
