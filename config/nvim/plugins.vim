@@ -11,6 +11,23 @@ let g:ctrlp_reuse_window = 'netrw'
 let g:ctrlp_types = ['fil', 'mru', 'tags']
 let g:ctrlp_extensions = ['tag']
 
+" custom projections
+let g:rails_projections = {
+\ "test/integration/*_test.rb": {
+\   "type": "integration test",
+\   "alternate": "app/controllers/{}.rb"
+\ },
+\ "app/controllers/*_controller.rb": {
+\    "affinity": "controller",
+\    "template": [
+\      "class {camelcase|capitalize|colons}Controller < ApplicationController",
+\      "end"
+\    ],
+\    "type": "controller",
+\    "alternate": "test/integration/{}_controller_test.rb"
+\ }
+\}
+
 " Use ag
 if executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor
