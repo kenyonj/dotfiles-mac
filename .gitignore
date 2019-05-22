@@ -12,3 +12,5 @@ rbenv/*/
 config/nvim/bundle/vim-tbro
 config/configstore
 alfred/Alfred.alfredpreferences/
+config/nvim/bundle
+config/.mono

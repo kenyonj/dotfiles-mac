@@ -26,6 +26,7 @@ Plug 'mattn/webapi-vim'
 Plug 'mattn/gist-vim'
 Plug 'mileszs/ack.vim'
 Plug 'w0rp/ale'
+Plug 'rhysd/git-messenger.vim'
 
 " Languages and markup
 Plug 'vim-ruby/vim-ruby'

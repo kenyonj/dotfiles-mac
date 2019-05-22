@@ -38,3 +38,5 @@ bindkey jj vi-cmd-mode
 bindkey "^u" history-beginning-search-backward
 bindkey "^v" history-beginning-search-forward
 export PATH="/usr/local/bin:$PATH"
+eval "$(rbenv init -)"
+eval "$(nodenv init -)"
