@@ -40,3 +40,4 @@ bindkey "^v" history-beginning-search-forward
 export PATH="/usr/local/bin:$PATH"
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
+eval "$(starship init zsh)"

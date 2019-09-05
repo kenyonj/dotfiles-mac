@@ -14,3 +14,4 @@ config/configstore
 alfred/Alfred.alfredpreferences/
 config/nvim/bundle
 config/.mono
+config/nvim/autoload

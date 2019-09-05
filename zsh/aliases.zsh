@@ -73,3 +73,5 @@ alias 💸="~/.bin/git-money"
 
 # tmux
 alias tmux="tmux new-session -A -s main"
+
+alias adb="/Users/kenyonj/code/personal/android-sdk/platform-tools/adb"

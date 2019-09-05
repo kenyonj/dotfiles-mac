@@ -33,8 +33,8 @@ setopt prompt_subst
 # Colorful prompt with Git and Subversion branch
 autoload -U colors && colors
 
-export PROMPT='%{$fg_bold[blue]%}%~%b%f %{$fg_bold[blue]%}# %b%f'
-export RPROMPT=''
+# export PROMPT='%{$fg_bold[blue]%}%~%b%f %{$fg_bold[blue]%}# %b%f'
+# export RPROMPT=''
 
 # more macOS/Bash-like word jumps
 export WORDCHARS=""
