@@ -105,3 +105,7 @@ map <silent> <leader><cr> :noh<cr>
 
 " use jsx file syntax highlighting
 map <Leader>jsx :let g:jsx_ext_required=0<CR>
+
+noremap <silent> <C-S>          :update<CR>
+vnoremap <silent> <C-S>         <C-C>:update<CR>
+inoremap <silent> <C-S>         <C-O>:update<CR>
