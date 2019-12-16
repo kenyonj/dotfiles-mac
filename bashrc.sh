@@ -12,3 +12,5 @@ export HISTFILE="$HOME/.bash_history"
 export HISTCONTROL="ignoredups"
 export PROMPT_COMMAND="history -a"
 export HISTIGNORE="&:ls:[bf]g:exit"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

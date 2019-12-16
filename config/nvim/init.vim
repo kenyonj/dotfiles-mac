@@ -19,7 +19,8 @@ Plug 'BlakeWilliams/vim-pry'
 Plug 'BlakeWilliams/vim-tbro'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'SirVer/ultisnips'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'ervandew/supertab'
 Plug 'janko-m/vim-test'
 Plug 'mattn/webapi-vim'
@@ -29,26 +30,13 @@ Plug 'w0rp/ale'
 Plug 'rhysd/git-messenger.vim'
 
 " Languages and markup
-Plug 'vim-ruby/vim-ruby'
-Plug 'othree/html5.vim'
-Plug 'tpope/vim-markdown'
-Plug 'pangloss/vim-javascript'
-Plug 'mustache/vim-mustache-handlebars'
-Plug 'elixir-lang/vim-elixir'
-Plug 'wting/rust.vim'
-Plug 'mxw/vim-jsx'
-Plug 'cakebaker/scss-syntax.vim'
-Plug 'cespare/vim-toml',                  { 'for': 'toml' }
-Plug 'hail2u/vim-css3-syntax'
-Plug 'leafgarland/typescript-vim'
-Plug 'flowtype/vim-flow'
+Plug 'sheerun/vim-polyglot'
 
 " Colors
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
 Plug 'Yggdroot/indentLine'
-Plug 'elzr/vim-json'
 
 " Movement
 Plug 'christoomey/vim-tmux-navigator'

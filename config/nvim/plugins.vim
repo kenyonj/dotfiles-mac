@@ -4,13 +4,6 @@ let g:deoplete#enable_at_startup = 1
 " Indent li and p tags properly
 let g:html_indent_tags = 'li\|p'
 
-" ctrlp - Don't cache
-let g:ctrlp_use_caching=0
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_reuse_window = 'netrw'
-let g:ctrlp_types = ['fil', 'mru', 'tags']
-let g:ctrlp_extensions = ['tag']
-
 " custom projections
 let g:rails_projections = {
 \ "test/integration/*_test.rb": {
@@ -31,7 +24,6 @@ let g:rails_projections = {
 " Use ag
 if executable('ag')
   set grepprg=ag\ --nogroup\ --nocolor
-  let g:ctrlp_user_command = 'ag %s -l --hidden --nocolor -g ""'
   let g:ackprg = 'ag --vimgrep'
 endif
 
@@ -71,9 +63,6 @@ let g:airline#extensions#tabline#show_buffers = 0
 let g:airline#extensions#tabline#show_tab_type = 0
 let g:airline#extensions#tabline#tab_min_count = 2
 let g:airline#extensions#ale#enabled = 1
-
-" Don't show modes
-let g:airline#extensions#ctrlp#show_adjacent_modes = 0
 
 " Better line/column information
 let g:airline_section_b = ""

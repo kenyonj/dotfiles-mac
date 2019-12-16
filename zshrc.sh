@@ -41,3 +41,5 @@ export PATH="/usr/local/bin:$PATH"
 eval "$(rbenv init -)"
 eval "$(nodenv init -)"
 kitty + complete setup zsh | source /dev/stdin
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
