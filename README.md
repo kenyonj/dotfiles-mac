@@ -5,6 +5,8 @@ My dot files shared between machines for ZSH, Bash, macOS, Linux, Cygwin and MSY
 Customise the contents of [`gitconfig-user`](https://github.com/kenyonj/dotfiles/blob/master/gitconfig-user).
 This is used for user-specific customisations of every other file.
 
+//[test]
+
 Run [`script/setup`](https://github.com/kenyonj/dotfiles/blob/master/script/setup)
 after checkout to symlink (or copy) everything in this directory to your home directory.
 
