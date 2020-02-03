@@ -46,7 +46,7 @@ let g:rspec_command = "Tbro bin/tt {spec}"
 
 " Set airline theme
 " let g:airline_solarized_bg='dark'
-let g:airline_theme="gruvbox"
+" let g:airline_theme="nightfly"
 let g:airline_solarized_dark_inactive_border=1
 let g:airline_solarized_normal_green=1
 
@@ -106,3 +106,5 @@ let g:UltiSnipsExpandTrigger="<Nop>"
 
 " Don't hide quotes in json
 let g:vim_json_syntax_conceal = 0
+
+let g:indentLine_setColors = 0

@@ -34,8 +34,8 @@ Plug 'sheerun/vim-polyglot'
 
 " Colors
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'morhetz/gruvbox'
+Plug 'bluz71/vim-nightfly-guicolors'
 Plug 'Yggdroot/indentLine'
 
 " Movement
@@ -50,7 +50,8 @@ filetype plugin indent on
 
 " Split config up for cleanliness
 source $HOME/.config/nvim/config.vim
-source $HOME/.config/nvim/colors.vim
+" source $HOME/.config/nvim/custom_colors/gruvbox.vim
+source $HOME/.config/nvim/custom_colors/nightfly.vim
 source $HOME/.config/nvim/plugins.vim
 source $HOME/.config/nvim/shortcuts.vim
 source $HOME/.config/nvim/autocommands.vim
