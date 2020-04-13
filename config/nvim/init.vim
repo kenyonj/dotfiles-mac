@@ -17,17 +17,17 @@ Plug 'tpope/vim-endwise'
 " Workflow
 Plug 'BlakeWilliams/vim-pry'
 Plug 'BlakeWilliams/vim-tbro'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'ervandew/supertab'
+" Plug 'ervandew/supertab'
 Plug 'janko-m/vim-test'
 Plug 'mattn/webapi-vim'
 Plug 'mattn/gist-vim'
 Plug 'mileszs/ack.vim'
 Plug 'w0rp/ale'
 Plug 'rhysd/git-messenger.vim'
+Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 
 " Languages and markup
 Plug 'sheerun/vim-polyglot'
@@ -42,7 +42,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'christoomey/vim-tmux-navigator'
 
 " Deoplete
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 call plug#end()
 

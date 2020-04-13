@@ -72,3 +72,6 @@ if exists("+undofile")
 endif
 
 let test#ruby#rails#executable = 'bin/tt'
+
+let g:coc_global_extensions = ['coc-solargraph', 'coc-json', 'coc-prettier']
+command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
