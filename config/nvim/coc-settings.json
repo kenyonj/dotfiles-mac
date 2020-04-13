@@ -1,0 +1,7 @@
+{
+  "solargraph.diagnostics": true,
+  "codeLens.enable": true,
+  "solargraph.useBundler": true,
+  "coc.preferences.formatOnSaveFiletypes": ["css", "Markdown"]
+}
+
