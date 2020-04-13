@@ -3,10 +3,6 @@ Layout/LeadingCommentSpace:
   Enabled: false
 
 # Too much noise.
-Metrics/LineLength:
-  Enabled: false
-
-# Too much noise.
 Style/FrozenStringLiteralComment:
   Enabled: false
 
