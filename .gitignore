@@ -16,3 +16,4 @@ config/nvim/bundle
 config/.mono
 config/nvim/autoload
 config/gh
+config/coc
