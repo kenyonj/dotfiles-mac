@@ -70,6 +70,7 @@ alias gri="git rebase -i"
 alias gs="git status -s"
 alias standup="git standup"
 alias 💸="~/.bin/git-money"
+alias gcb!='git branch -d `git branch --merged | grep -v "^*" | grep -v "master" | tr -d "\n"`'
 
 # tmux
 alias tmux="tmux new-session -A -s main"
