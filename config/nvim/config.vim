@@ -3,7 +3,7 @@ syntax on
 set autoindent                  " Copy indent from previous line
 set backupcopy=yes              " Keeps original creator code
 set backspace=indent,eol,start  " Adds intuitive backspacing
-set colorcolumn=100             " Highlight line 100
+set colorcolumn=115,118         " Highlight lines 115 & 118 (GitHub PR code view window width limit is 118)
 set diffopt+=vertical           " Always use vertical diffs
 set fillchars+=vert:│           " Use tall pipe in split separators
 " set gdefault                  " When on a line, replace all matches in line
