@@ -16,7 +16,6 @@
     "editor.glyphMargin": false,
     "editor.renderIndentGuides": true,
     "editor.selectionHighlight": false,
-    "workbench.colorTheme": "macOS Classic",
     "workbench.iconTheme": "macos-classic-icons",
     "workbench.startupEditor": "none",
     "ruby.codeCompletion": "rcodetools",
@@ -33,4 +32,5 @@
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "window.zoomLevel": 0,
+    "workbench.colorTheme": "Night Owl",
 }
