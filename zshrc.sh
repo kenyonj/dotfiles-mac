@@ -43,3 +43,5 @@ eval "$(nodenv init -)"
 kitty + complete setup zsh | source /dev/stdin
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='ag -l --path-to-ignore ~/.ignore --nocolor --hidden -g ""'
+export FZF_DEFAULT_OPTS='--color=16'
