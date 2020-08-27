@@ -3,7 +3,7 @@ syntax on
 set autoindent                  " Copy indent from previous line
 set backupcopy=yes              " Keeps original creator code
 set backspace=indent,eol,start  " Adds intuitive backspacing
-set colorcolumn=115,118         " Highlight lines 115 & 118 (GitHub PR code view window width limit is 118)
+set colorcolumn=100,118         " Highlight lines 100 & 118 (GitHub PR code view window width limit is 118)
 set diffopt+=vertical           " Always use vertical diffs
 set fillchars+=vert:│           " Use tall pipe in split separators
 " set gdefault                  " When on a line, replace all matches in line
@@ -71,7 +71,7 @@ if exists("+undofile")
   set undodir=~/.vim/undo/
 endif
 
-let test#ruby#rails#executable = 'bin/tt'
+let test#ruby#rails#executable = 'bin/rails test'
 
-let g:coc_global_extensions = ['coc-solargraph', 'coc-json', 'coc-prettier']
-command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+" let g:coc_global_extensions = ['coc-json', 'coc-prettier']
+" command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')

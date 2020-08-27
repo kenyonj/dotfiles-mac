@@ -42,7 +42,7 @@ let g:netrw_retmap = 1
 let g:netrw_dirhistmax = 0
 
 " vim-rspec - Use Tbro to run rspec
-let g:rspec_command = "Tbro bin/tt {spec}"
+let g:rspec_command = "Tbro bin/rails test {spec}"
 
 " Set airline theme
 " let g:airline_solarized_bg='dark'
@@ -72,13 +72,19 @@ let g:ale_sign_error="△"
 let g:ale_sign_warning="✕"
 
 let g:ale_linters = {
-\   'javascript': ['eslint', 'flow'],
+\   'javascript': ['eslint'],
+\   'typescript': ['tslint', 'tsserver', 'typecheck'],
 \}
 
 let g:ale_fixers = {
 \   'javascript': ['prettier'],
+\   'typescript': ['prettier'],
+\   'vue': ['prettier'],
 \}
 let g:ale_fix_on_save=1
+
+let g:ale_ruby_rubocop_executable = 'bin/rubocop'
+let g:ale_ruby_ruby_executable = 'bin/safe-ruby'
 
 " Single character modes
 let g:airline_mode_map = {
@@ -108,3 +114,19 @@ let g:UltiSnipsExpandTrigger="<Nop>"
 let g:vim_json_syntax_conceal = 0
 
 let g:indentLine_setColors = 0
+
+" command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+"
+" Use tab to trigger CoC
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Allow enter for CoC
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"

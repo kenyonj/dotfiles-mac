@@ -7,7 +7,7 @@
 [gist]
   browse = true
 [push]
-  default = upstream
+  default = current
 [pull]
   rebase = true
 [fetch]
@@ -19,6 +19,7 @@
   attributesfile = ~/.gitattributes
   mergeoptions = --no-edit
   commitGraph = true
+  pager = delta --plus-color="#012800" --minus-color="#340001" --theme='Monokai Extended'
 [help]
   autocorrect = 1
 [instaweb]
@@ -61,3 +62,5 @@
   user = kenyonj
 [gpg]
   program = gpg
+[interactive]
+  diffFilter = delta --color-only

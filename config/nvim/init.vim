@@ -12,7 +12,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-rails'
-Plug 'tpope/vim-endwise'
+" Plug 'tpope/vim-endwise'
 
 " Workflow
 Plug 'BlakeWilliams/vim-pry'
@@ -25,7 +25,7 @@ Plug 'janko-m/vim-test'
 Plug 'mattn/webapi-vim'
 Plug 'mattn/gist-vim'
 Plug 'mileszs/ack.vim'
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 Plug 'rhysd/git-messenger.vim'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 

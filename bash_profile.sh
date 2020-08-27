@@ -52,3 +52,5 @@ then
   bind '"^u" history-search-backward'
   bind '"^v" history-search-forward'
 fi
+
+export PATH="$HOME/.cargo/bin:$PATH"

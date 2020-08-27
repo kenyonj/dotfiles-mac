@@ -1,7 +1,10 @@
 {
-  "solargraph.diagnostics": true,
-  "codeLens.enable": true,
-  "solargraph.useBundler": true,
-  "coc.preferences.formatOnSaveFiletypes": ["css", "Markdown"]
+  "suggest.enablePreview": true,
+  "diagnostic.warningSign": "⚠",
+  "diagnostic.errorSign": "✕",
+  "diagnostic.infoSign": "✕",
+  "diagnostic.hintSign": "✕",
+  "solargraph.env": {
+    "RBENV_VERSION": "2.6.0"
+  }
 }
-

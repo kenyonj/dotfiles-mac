@@ -40,3 +40,5 @@ export RPROMPT=''
 export WORDCHARS=""
 
 eval "$(fasd --init auto)"
+
+export PATH="$HOME/.cargo/bin:$PATH"

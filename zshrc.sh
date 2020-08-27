@@ -45,3 +45,6 @@ kitty + complete setup zsh | source /dev/stdin
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='ag -l --path-to-ignore ~/.ignore --nocolor --hidden -g ""'
 export FZF_DEFAULT_OPTS='--color=16'
+export OVERMIND_TMUX_CONFIG="$HOME/.tmux.overmind.conf"
+export PATH="/Users/kenyonj/dotfiles/git-fuzzy/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$PATH"
