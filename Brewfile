@@ -30,6 +30,8 @@ brew "python"
 brew "grc"
 brew "heroku"
 brew "hub"
+brew "the_silver_searcher"
+brew "tmux"
 brew "hyperscan"
 brew "imagemagick"
 brew "jansson"
@@ -60,6 +62,9 @@ brew "shellcheck"
 brew "ssh-copy-id"
 brew "wget"
 brew "write-good"
+brew "zoom"
+brew "gpg"
+brew "pinentry-mac"
 cask "alfred"
 cask "appcleaner"
 cask "bartender"
@@ -85,12 +90,5 @@ cask "vagrant"
 cask "visual-studio-code"
 cask "vmware-fusion"
 cask "whatsapp"
-cask "zoomus"
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
 mas "Slack", id: 803453959
-mas "Spark", id: 1176895641
 mas "Xcode", id: 497799835
