@@ -89,19 +89,20 @@ positions = {
 --
 
 layouts = {
-  {
-    name="Coding",
-    description="For fun and profit",
-    small={
-      {"Microsoft Edge", nil, screen, positions.left70, nil, nil},
-      {"kitty", nil, screen, positions.right30, nil, nil},
-    },
-    large={
-      {"Microsoft Edge", nil, screen, positions.left50, nil, nil},
-      {"kitty", nil, screen, positions.upper50Right30, nil, nil},
-    }
-  },
+  -- {
+  --   name="Coding",
+  --   description="For fun and profit",
+  --   small={
+  --     {"Microsoft Edge", nil, screen, positions.left70, nil, nil},
+  --     {"kitty", nil, screen, positions.right30, nil, nil},
+  --   },
+  --   large={
+  --     {"Microsoft Edge", nil, screen, positions.left50, nil, nil},
+  --     {"kitty", nil, screen, positions.upper50Right30, nil, nil},
+  --   }
+  -- },
 }
+
 currentLayout = null
 
 function applyLayout(layout)
