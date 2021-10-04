@@ -93,35 +93,12 @@ layouts = {
     name="Coding",
     description="For fun and profit",
     small={
-      {"Firefox", nil, screen, positions.left70, nil, nil},
-      {"Twitter", nil, screen, positions.right30, nil, nil},
+      {"Microsoft Edge", nil, screen, positions.left70, nil, nil},
+      {"kitty", nil, screen, positions.right30, nil, nil},
     },
     large={
-      {"Firefox", nil, screen, positions.left50, nil, nil},
-      {"Twitter", nil, screen, positions.upper50Right30, nil, nil},
-    }
-  },
-  {
-    name="Blogging",
-    description="Time to write",
-    small={
-      {"Firefox", nil, screen, positions.left50, nil, nil},
-      {"iTerm",   nil, screen, positions.right50, nil, nil},
-    }
-  },
-  {
-    name="Work",
-    description="Pedal to the metal",
-    small={
-      {"Firefox", nil, screen, positions.maximized, nil, nil},
-      {"Slack",   nil, screen, positions.maximized, nil, nil},
-      {"Twitter", nil, screen, positions.right30, nil, nil},
-    },
-    large={
-      {"Firefox", nil, screen, positions.left50, nil, nil},
-      {"Firefox", "Console - ", screen, positions.lower50Right50, nil, nil},
-      {"Slack",   nil, screen, positions.chat, nil, nil},
-      {"Twitter", nil, screen, positions.upper50Right15, nil, nil},
+      {"Microsoft Edge", nil, screen, positions.left50, nil, nil},
+      {"kitty", nil, screen, positions.upper50Right30, nil, nil},
     }
   },
 }
